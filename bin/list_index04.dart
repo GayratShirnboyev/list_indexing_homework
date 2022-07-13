@@ -8,9 +8,9 @@
 */
 List func(List list1) {
   List x = [];
-  x.add(list1[2]);
-  list1.length;
-  return list1;
+  x.add(list1.last);
+
+  return x;
 }
 
 void main() {
