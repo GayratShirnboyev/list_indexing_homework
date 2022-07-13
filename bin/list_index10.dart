@@ -6,11 +6,20 @@
     Returns:
         int: return answer
 */
-int func(List list1) {
-  int x = list1.reduce((a, b) => a > b ? a : b);
+import 'dart:math';
+
+List func(list_num) {
+  int i = 0;
+  List x = [];
+  if (list_num.first < list_num.last) {
+    i = list_num.last;
+  } else {
+    i = list_num.first;
+    x.add(i);
+  }
   return x;
 }
 
 void main() {
-  print(func([2, 3, 4, 9, 6, 3, 2]));
+  print(func([8, 3, 4, 5, 6, 3, 2]));
 }
