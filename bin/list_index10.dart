@@ -6,4 +6,11 @@
     Returns:
         int: return answer
 */
-void main() {}
+int func(List list1) {
+  int x = list1.reduce((a, b) => a > b ? a : b);
+  return x;
+}
+
+void main() {
+  print(func([2, 3, 4, 9, 6, 3, 2]));
+}
